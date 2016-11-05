@@ -1,0 +1,7 @@
+services:
+    wilensky_adyen.api:
+        class: Wilensky\AdyenBundle\Api\Api
+        arguments:
+            - "%wilensky_adyen.merchant_account%"
+            - "%wilensky_adyen.username%"
+            - "%wilensky_adyen.password%"
